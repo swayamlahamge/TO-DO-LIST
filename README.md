@@ -9,7 +9,7 @@ A simple web-based To-Do List built using **HTML, CSS, and JavaScript**.
 - Clean and simple UI.
 
 ## How to Use
-1. Open `index.html` in your browser.
+1. Open `https://swayamlahamge.github.io/TO-DO-LIST/` in your browser.
 2. Type your task in the input box.
 3. Click **Add** to add the task.
 4. Click the **X** button to delete a task.
