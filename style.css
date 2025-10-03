@@ -1,33 +1,57 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background: linear-gradient(120deg, #43cea2 0%, #185a9d 60%, #f8ffae 100%);
+  
 }
 
-.container {
-  background: beige;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
+  .container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    width: 420px;
+    transition: box-shadow 0.3s;
+  }
 }
 
 h2 {
   text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  color: #185a9d;
+  text-shadow: 0 2px 8px rgba(31, 38, 135, 0.15);
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  border-bottom: 3px solid #43cea2;
+  display: inline-block;
+  padding-bottom: 6px;
 }
 
 input {
-  width: 80%;
+  width: 70%;
   padding: 8px;
   border: none;
+  background: beige;
+  border-radius:10px 0 0 10px;
 }
 
 button {
-  padding: 8px;
-  border: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(191, 233, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
+  color: #222;
+  background: rgba(191, 233, 255, 0.4);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 ul {
@@ -47,4 +71,9 @@ li {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+}
+
+taskInput::placeholder{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
