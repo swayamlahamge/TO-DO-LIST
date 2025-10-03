@@ -20,7 +20,8 @@ body {
   }
 }
 
-h2 {
+h2{
+  
   text-align: center;
   font-size: 2.4rem;
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
@@ -32,6 +33,7 @@ h2 {
   border-bottom: 3px solid #43cea2;
   display: inline-block;
   padding-bottom: 6px;
+  font-style: italic;
 }
 
 input {
@@ -43,10 +45,10 @@ input {
 }
 
 button {
-  padding: 10px;
+  padding: 8px;
   background: rgba(255, 255, 255, 0.6);
   border: 1.5px solid rgba(191, 233, 255, 0.5);
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
   color: #222;
   background: rgba(191, 233, 255, 0.4);
@@ -70,7 +72,19 @@ li {
   margin-bottom: 5px;
   border-radius: 5px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.completed-task span {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.completed-task span {
+  color: #888;
+  filter: blur(1px);
+  text-decoration: line-through;
 }
 
 taskInput::placeholder{
