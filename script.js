@@ -7,17 +7,21 @@ function addTask() {
     return;
   }
 
-  let li = document.createElement("li");
-  li.textContent = taskText;   //apan li element craete karto ahe ani techya madhe apan tasttext bharto ahe as an element
+    let li = document.createElement("li");
 
-  let deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "X";  // ikda pan same ek button creatre kela ani techya madhe X (text) as an element bharla
-  deleteBtn.onclick = function() {
-    li.remove();
-  };
+    // Add task text
+    let span = document.createElement("span");
+    span.textContent = taskText;
+    li.appendChild(span);
 
-  li.appendChild(deleteBtn);
-  document.getElementById("taskList").appendChild(li);
+    // Add X button to toggle completed state
+    let toggleBtn = document.createElement("button");
+    toggleBtn.textContent = "X";
+    toggleBtn.onclick = function() {
+      li.classList.toggle("completed-task");
+    };
+    li.appendChild(toggleBtn);
 
-  input.value = "";
+    document.getElementById("taskList").appendChild(li);
+    input.value = "";
 }
