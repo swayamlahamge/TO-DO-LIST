@@ -18,7 +18,7 @@ body {
     width: 420px;
     transition: box-shadow 0.3s;
   }
-}
+
 
 h2{
   
@@ -30,7 +30,7 @@ h2{
   text-shadow: 0 2px 8px rgba(31, 38, 135, 0.15);
   letter-spacing: 1.5px;
   margin-bottom: 18px;
-  border-bottom: 3px solid #43cea2;
+  
   display: inline-block;
   padding-bottom: 6px;
   font-style: italic;
@@ -89,5 +89,36 @@ li {
 
 taskInput::placeholder{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+@media (max-width: 600px) {
+  .container {
+    width: 95vw;
+    padding: 18px;
+    border-radius: 12px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+  }
+  input {
+    width: 60%;
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 10px 0 0 10px;
+  }
+  button {
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 0 10px 10px 0;
+    margin-left: -4px;
+  }
+  ul {
+    max-height: 120px;
+  }
+  li {
+    font-size: 0.95rem;
+    padding: 6px;
+  }
 }
